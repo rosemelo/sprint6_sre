@@ -5,18 +5,18 @@
 Para poder executar esse desafio, você precisará ter instalado o **Docker**
 
 - Então agora vamos baixar e instalar o **Docker Compose**:
-```sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/bin/docker-compose && sudo chmod +x /usr/bin/docker-compose
-```
+    ```sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/bin/docker-compose && sudo chmod +x /usr/bin/docker-compose
+    ```
 
 
 - Para confirmar que a instalação foi feita:
-```docker-compose –version
-```
+    ```docker-compose –version
+    ```
 
 - Vamos reagrupar as nossas variáveis de ambiente com o arquivo .env.
 - Crie o arquivo **.env**:
-```vi .env
-```
+    ```vi .env
+    ```
 
 - E coloque o seguinte conteúdo:
 ```# Version of Elastic products
@@ -32,8 +32,8 @@ Para sair do **vi** aperte a tecla **Insert**, depois **Esc** para ter certeza d
  
 - Agora vamos para o arquivo **docker-compose.yml**.
 - Crie o arquivo:
-```vi docker-compose.yml
-```
+    ```vi docker-compose.yml
+    ```
 
 - Insira o conteúdo:
 ```version: '3.8'
@@ -79,20 +79,20 @@ O mesmo para o Kibana, especificamos um nome para o contêiner ( kibana ), preen
 
 
 - Agora, crie e inicie a instância Kibana e o cluster Elasticsearch de um nó executando o seguinte comando:
-```docker-compose up -d
-```
+    ```docker-compose up -d
+    ```
 
 
 - Abra no navegador acessando:
-```o_seu_ip:5601
-```
+    ```o_seu_ip:5601
+    ```
 
 
 - Para parar o cluster:
-```docker-compose down
-```
+    ```docker-compose down
+    ```
 
 
 - Para excluir os containers e também os volumes:
-```docker-compose down -v
-```
+    ```docker-compose down -v
+    ```
